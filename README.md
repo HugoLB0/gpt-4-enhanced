@@ -18,6 +18,32 @@ https://github.com/HugoLB0/gpt-4-jarvis/assets/66400773/11018f76-d908-4ffb-a0d4-
 - **Langchain**: Leveraging Langchain for seamless integration of language models.
 - **Asynchronous Programming**: Ensuring efficient and fast response times.
 
-## 📫 Contact me for source code or more informations : 
+## ⚙️ Installation ⚙️
+### file structure:
+- ``` MAIN_FLASK.py ``` is the main script that act as a backend. it handle the requests, Yolo and so on. 
+- ``` MAIN_user_cli_gpt.py ``` is the command line version of the client, without the tts and stt feature.
+- ``` MAIN_user_speech_reco.py ``` is the client with the stt and tts feature.
+
+### how to run ?
+First you have to put your OPENAI_APIKEY in the .env file with the following format:
+```
+OPENAI_API_KEY="sk-********"
+```
+Then install required modules (i recommande setting up a virtual environement first):
+```
+pip install -r requirements.txt
+```
+Now, run the ``` MAIN_flask.py```, and in another terminal window, run the ``` MAIN_user_cli_gpt.py ``` or ``` MAIN_user_speech_reco.py ```, depending if you want tts and stt feature or not.
+```
+python MAIN_flask.py
+```
+```
+python MAIN_user_cli_gpt.py # or MAIN_user_speech_reco.py
+```
+
+
+
+
+## 📫 Contact me for more informations or if you need any help : 
 - Email: hugolebelzic@protonmail.com
 - LinkedIn: https://www.linkedin.com/in/hugo-le-belzic-4aa68a207/
